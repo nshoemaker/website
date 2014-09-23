@@ -1,0 +1,135 @@
+
+.centered-text {
+    text-align:center
+}    
+.profile-info {
+  max-width: 600px;
+  padding-top: 20px;
+  margin: 0 auto;
+}
+.profpic{
+  border-radius: 5px;
+}
+
+.vert-padded{
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.comment-dislike{
+	padding-top:5px;
+}
+
+.top-padded{
+  padding-top: 20px;
+}
+
+.grumble{
+  position:relative;
+  border:1px solid #ffffff;
+  border-radius: 5px;
+  padding: 5px;
+  background-color: #fff;
+}
+
+.bottomright {
+  position:absolute; 
+  padding-bottom: 3px;
+  padding-right: 3px;
+  bottom: 0;  
+  right: 0;
+}
+
+.large-icon {
+  font-size: 40px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+}
+
+.medium-icon {
+  font-size: 20px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+
+.bottom-button{    
+  margin: 0 auto;
+}
+
+.form-signin {
+  max-width: 330px;
+  padding: 15px;
+  margin: 0 auto;
+}
+.form-signin .form-signin-heading,
+.form-signin .checkbox {
+  margin-bottom: 10px;
+}
+.form-signin .checkbox {
+  font-weight: normal;
+}
+.form-signin .form-control {
+  position: relative;
+  height: auto;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 10px;
+  font-size: 16px;
+}
+.form-signin .form-control:focus {
+  z-index: 2;
+}
+.form-signin input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.shrink-to-width{
+  padding-top: 20px;
+  width: 80%;
+}
+
+/* SOCIAL */
+@font-face { font-family: 'JustVectorRegular'; font-weight: normal; font-style: normal;
+    src: url('fonts/justvector/justvector-webfont.eot');
+    src: url('fonts/justvector/justvector-webfont.eot?#iefix') format('eot'),
+         url('fonts/justvector/justvector-webfont.woff') format('woff'),
+         url('fonts/justvector/justvector-webfont.ttf') format('truetype'),
+         url('fonts/justvector/justvector-webfont.svg#webfontmuk63VQd') format('svg');
+}
+.social { padding:0; list-style:none; }
+.social li { display:inline-block; margin-bottom: -3px; }
+.social li a { display:block; float:left; line-height:90%; font-family: 'JustVectorRegular'; font-size:3em; padding:.2em .2em .15em .2em; }
+.social li a:hover { background-color:#eee; }
+.social li a.facebook:hover { background-color:#3c5fac; }
+.social li a.twitter:hover { background-color:#5ec3df; }
+.social li a.flickr:hover { background-color:#FF0084; }
+.social li a.rss:hover { background-color:#ff9900; }
+.social li a.dribble:hover { background-color:#EA4C89; }
+.social li a.lastfm:hover { background-color:#D51007; }
+.social li a.linkedin:hover { background-color:#2089b5; }
+.social li a.vimeo:hover { background-color:#0dadd6; }
+.social li a.google:hover { background-color:#c63d2d; }
+.social li a.forrst:hover { background-color:#5b9a68; }
+.social li a.skype:hover { background-color:#00aff0; }
+.social li a.picassa:hover { background-color:#ffd34e; }
+.social li a.youtube:hover { background-color:#c8312b; }
+.social li a.pinterest:hover { background-color:#cb2027; }
+.social li a.tumblr:hover { background-color: #2C4762; }
+.social li a.behance:hover { background-color: #3878F6; }
+.social li a.blogger:hover { background-color: #fc9947; }
+.social li a.delicious:hover { background-color: #3274d1; }
+.social li a.digg:hover { background-color: #205891; }
+.social li a.friendfeed:hover { background-color: #2f72c4; }
+.social li a.github:hover { background-color: #000; }
+.social li a.wordpress:hover { background-color: #0083b3; }
+
