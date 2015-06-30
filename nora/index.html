@@ -1,102 +1,355 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
 <head>
-	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<title>Nora Shoemaker</title>
+	<meta name="author" content="Nora Shoemaker" />
+	<meta name="description" content="personal website" />
+	<meta name="keywords"  content="fullpage,jquery,demo,screen,fullscreen,backgrounds,full-screen" />
+	<meta name="Resource-type" content="Document" />
 
 
-	<link rel="stylesheet" href="static/css/hoverbox.css" type="text/css" media="screen, projection" />
-	<!--[if lte IE 7]>
-	<link rel="stylesheet" href='css/ie_fixes.css' type="text/css" media="screen, projection" />
-	<![endif]-->
+	<link rel="stylesheet" type="text/css" href="static/js/fullPage.js-master/jquery.fullPage.css" />
+	<link rel="stylesheet" type="text/css" href="static/css/examples.css" />
+	<link rel="stylesheet" type="text/css" href="static/css/test.css" />
 	<link rel="stylesheet" href="static/css/bootstrap.min.css">
 	<link rel="stylesheet" href="static/css/controls.css">
+	<style>
+
+	/* Style for our header texts
+	* --------------------------------------- */
+	h1{
+		font-size: 5em;
+		font-family: arial,helvetica;
+		color: #333;
+		margin:0;
+		padding:0;
+	}
+
+	/* Centered texts in each section
+	* --------------------------------------- */
+	.section{
+		text-align:center;
+	}
+
+
+	/* Backgrounds will cover all the section
+	* --------------------------------------- */
+	.section{
+		background-size: cover;
+	}
+
+	.slide{
+		background-size: cover;
+	}
+
+	/* Defining each sectino background and styles
+	* --------------------------------------- */
+	#hello{
+		background-color: #E6FFFF;
+		padding: 20% 0 0 0;
+	}
+	#about{
+		background-color: #DAFFFF;
+		padding: 6% 0 0 0;
+	}
+	#contact{
+		background-color: #C0FFFF;
+		padding: 15% 0 0 0;
+	}
+	#contact h1{
+		color: #000;
+	}
+
+
+ 	/*Adding background for the slides
+	* --------------------------------------- */
+	#slide1{
+		background-color: #CDFFFF;
+		padding: 4% 0 0 0;
+	}
+	#slide2{
+		background-color: #CDFFFF;		
+		padding: 1% 0 0 0;
+	}
+	#slide3{
+		background-color: #CDFFFF;
+		padding: 1% 0 0 0;
+	}
+	#slide4{
+		background-color: #CDFFFF;
+		padding: 1% 0 0 0;
+	}
+	#slide5{
+		background-color: #CDFFFF;
+		padding: 1% 0 0 0;
+	}
+	#slide6{
+		background-color: #CDFFFF;
+		padding: 1% 0 0 0;
+	}
+
+
+
+	/* Bottom menu
+	* --------------------------------------- */
+	#infoMenu li a {
+		color: #fff;
+	}
+	</style>
+
+	<!--[if IE]>
+		<script type="text/javascript">
+			 var console = { log: function() {} };
+		</script>
+	<![endif]-->
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+
+	<script type="text/javascript" src="static/js/fullPage.js-master/jquery.fullPage.min.js"></script>
+	<!--<script type="text/javascript" src="examples.js"></script>-->
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#fullpage').fullpage({
+				'verticalCentered': false,
+				navigation: true,
+				slidesNavigation: true
+			});
+		});
+	</script>
+
 </head>
 <body>
-	    <!-- Fixed navbar -->
-    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="index.html">Nora Shoemaker</a>
-        </div>
-        <div class="navbar-collapse collapse">
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="index.html">Gallery</a></li>
-            <li><a href="about_me.html">About Me</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="resume.pdf" target="_blank">Resume</a></li>
-          </ul>
-        </div><!--/.nav-collapse -->
-      </div>
-    </div>
 
-    <div class="top-padded centered-text">
-    	<!--<div class="jumbotron">
-			<h1>Gallery</h1>
-		</div>-->
-		<ul class="hoverbox">
-		<li>
-		<a href="#"><img src="static/img/photo01.png" alt="description" /><img src="static/img/photo01.png" alt="description" class="preview" /></a>
-		</li>
-		<li>
-		<a href="#"><img src="static/img/photo02.png" alt="description" /><img src="static/img/photo02.png" alt="description" class="preview" /></a>
-		</li>	
-		<li>
-		<a href="#"><img src="static/img/photo03.png" alt="description" /><img src="static/img/photo03.png" alt="description" class="preview" /></a>
-		</li>
-		<li>
-		<a href="#"><img src="static/img/photo04.png" alt="description" /><img src="static/img/photo04.png" alt="description" class="preview" /></a>
-		</li>
-		<li>
-		<a href="#"><img src="static/img/photo05.png" alt="description" /><img src="static/img/photo05.png" alt="description" class="preview" /></a>
-		</li>
-		<li>
-		<a href="#"><img src="static/img/photo06.jpg" alt="description" /><img src="static/img/photo06.jpg" alt="description" class="preview" /></a>
-		</li>
-		<li>
-		<a href="#"><img src="static/img/photo07.jpg" alt="description" /><img src="static/img/photo07.jpg" alt="description" class="preview" /></a>
-		</li>
-		<li>
-		<a href="#"><img src="static/img/photo08.png" alt="description" /><img src="static/img/photo08.png" alt="description" class="preview" /></a>
-		</li>
-		<li>
-		<a href="#"><img src="static/img/photo09.jpg" alt="description" /><img src="static/img/photo09.jpg" alt="description" class="preview" /></a>
-		</li>
-		<li>
-		<a href="#"><img src="static/img/photo10.png" alt="description" /><img src="static/img/photo10.png" alt="description" class="preview" /></a>
-		</li>
-		<li>
-		<a href="#"><img src="static/img/photo11.jpg" alt="description" /><img src="static/img/photo11.jpg" alt="description" class="preview" /></a>
-		</li>
-		<li>
-		<a href="#"><img src="static/img/photo12.jpg" alt="description" /><img src="static/img/photo12.jpg" alt="description" class="preview" /></a>
-		</li>
-		<li>
-		<a href="#"><img src="static/img/photo13.JPG" alt="description" /><img src="static/img/photo13.JPG" alt="description" class="preview" /></a>
-		</li>
-		<li>
-		<a href="#"><img src="static/img/photo14.JPG" alt="description" /><img src="static/img/photo14.JPG" alt="description" class="preview" /></a>
-		</li>
-		<li>
-		<a href="#"><img src="static/img/photo15.png" alt="description" /><img src="static/img/photo15.png" alt="description" class="preview" /></a>
-		</li>
-		<li>
-		<a href="#"><img src="static/img/photo16.png" alt="description" /><img src="static/img/photo16.png" alt="description" class="preview" /></a>
-		</li>
-		</ul>
-		<p id="footer"></p>
+<!--<a href="https://github.com/alvarotrigo/fullPage.js" id="githubLink"><img style="position: fixed;z-index:99; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_orange_ff7600.png" alt="Fork me on GitHub"></a>-->
+
+<!--<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://alvarotrigo.com/fullPage/" data-text="Great plugin to create fullscreen scrolling websites: http://alvarotrigo.com/fullPage/">Tweet</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>-->
+
+
+<div id="fullpage">
+	<div class="section " id="hello">
+		<div>
+			<h1>Hello, I'm Nora</h1>
+		</div>
+		<div>
+			<ul id="horilist">
+	          	<li>
+	            	<a href="https://www.linkedin.com/in/norashoemaker" target="_blank"><img src="static/ico/flat/png/color-cirlce/linkedin.png" alt="LinkedIn"></a>
+	          	</li>
+	          	<li>
+	            	<a href="https://github.com/nshoemaker" target="_blank"><img src="static/ico/flat/png/color-cirlce/github.png" alt="GitHub"></a>
+	          	</li>
+	          	<li>
+	            	<a href="https://www.facebook.com/nora.shoemaker" target="_blank"><img src="static/ico/flat/png/color-cirlce/facebook.png" alt="Facebook"></a>
+	          	</li>
+	          	<li>
+	            	<a href="http://instagram.com/nshoemaker" target="_blank"><img src="static/ico/flat/png/color-cirlce/instagram.png" alt="Instagram"></a>
+	          	</li>
+	         	 <li>
+	            	<a href="http://www.pinterest.com/makesshoes" target="_blank"><img src="	static/ico/flat/png/color-cirlce/pinterest.png" alt="Pinterest"></a>
+	          	</li>
+        	</ul>
+    	</div>
 	</div>
-	<!-- Bootstrap core JavaScript
-	================================================== -->
-	<!-- Placed at the end of the document so the pages load faster -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-	<script src="/static/js/bootstrap.min.js"></script>
+	<!-- Start About Me -->
+	<div class="section" id="about">
+		<div class="intro">
+			<h1>About Me</h1>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 ">
+				<h3 class="text-left text-light">Hi, I'm Nora. I'm a software developer from Cleveland, OH. I am currently in my senior year at Carnegie Mellon University studying Electrical and Computer Engineering and Software Engineering. I love to make things. </h3>
+				<h3 class="text-left text-light"> In my free time, you can find me at hackathons, cooking, crafting, dancing, or contributing to one of the projects I am currently involved with. </h3>
+				<h3 class="text-left text-light">Feel free to check out my <a href="resume.pdf" target="_blank">resume</a>, send me an <a href="mailto:nshoemak@andrew.cmu.edu">email</a>, or check out my work below</a>.</h3>
+				</div>
+				<div class="col-md-6">
+					<a href="#"><img class="shrink-to-width" src="static/img/IMG_0044.jpg" alt="description" /></a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End About Me -->
+
+	<!-- Start Projects -->
+	<div class="section" id="projects">
+	    <!-- Start slide 1 -->
+	    <div class="slide" id="slide1" data-anchor="slide1">
+	    	<h1>Projects</h1>
+	    	<h3>These are a few of the recent projects I've been working on.</h3>
+	    	<h6>(Use the &#8592; arrow keys &#8594; to navigate)</h6>
+	    </div>
+	    <!-- End Slide 1 -->
+
+	    <!-- Start Slide 2 -->
+	    <div class="slide" id="slide2" data-anchor="slide2">
+		<div class="intro">
+			<h1>CodeBook</h1>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4 ">
+				<h3 class="text-left text-light">
+					CodeBook is an all-inclusive, go-to source for anyone looking to learn a new programming language. 
+				</h3>
+				<h5 class="text-left text-light">
+					CodeBook is a Web Application that suggests example open-source projects (found on GitHub), based on a user’s preferred language and level of experience.
+				</h5>
+
+				<h5 class="text-left text-light">
+					Users can rate projects based on how well documented they are, and tag projects with the specific technologies being used.  
+				</h5>
+				<h5 class="text-left text-light">
+					The goal is not to provide a specific tutorial but rather to allow beginners to see what code looks like in real life.
+				</h5>
+				<h5 class="text-left text-light">
+					Source: <a href="https://github.com/nshoemaker/CodeBook">https://github.com/nshoemaker/CodeBook</a>
+				</h5>
+				<h5 class="text-left text-light">
+					Technologies: Django, Python, JavaScript, HTML, CSS, jQuery, Ajax, AWS, MySQL, GitHub API.
+				</h5>
+				</div>
+				<div class="col-md-8">
+					<a href="#"><img class="shrink-to-width" src="static/img/CodeBook.jpg" alt="description" /></a>
+				</div>
+			</div>
+		</div>
+	    </div>
+	    <!-- End Slide 2 -->
+
+	    <!-- Start Slide 3 -->
+	    <div class="slide" id="slide3" data-anchor="slide3">
+
+		<div class="intro">
+			<h1>Open Academy</h1>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 ">
+				<h3 class="text-left text-light">
+					As a part of Facebook's <a href="https://www.facebook.com/OpenAcademyProgram">Open Academy</a> program, I contributed to an open source project called <a href="https://www.facebook.com/OpenAcademyProgram">Glob3 Mobile</a>. 
+				</h3>
+				<h5 class="text-left text-light">
+					Open Academy provides practical software engineering experiences through collaboration with top universities and open source projects around the world.
+				</h5>
+
+				<h5 class="text-left text-light">
+					The program is comprised of two main components. It starts with the kickoff event in which all parties come together at Facebook Headquarters for an intensive weekend of learning, hacking and building connections. After the kickoff session, students return to their home universities and continue work in virtual teams.  
+				</h5>
+				<h5 class="text-left text-light">
+					I worked on Glob3 Mobile, a multiplatform 3D globe visualization framework.
+				</h5>
+				<h5 class="text-left text-light">
+					I created an Android app that uses the Glob3 Mobile framework to plot the trajectory of the International Space Station in real time (code can be found <a href="https://github.com/nshoemaker/15-413Sandbox">here</a>).
+				</h5>
+				<h5 class="text-left text-light">
+					With <a href=https://github.com/boyP>Pratik Prakash</a>, I worked on a feature that uses data from <a href="http://osmbuildings.org/">OpenStreetMap Buildings</a> to render 3D buildings on a tiled basis.
+				</h5>
+				<h5 class="text-left text-light">
+					Technologies: C++, C, Java, Android, OpenStreetMap, OpenGL.
+				</h5>
+				</div>
+				<div class="col-md-6">
+					<a href="#"><img class="shrink-to-width" src="static/img/OpenAcademy.jpg" alt="description" /></a>
+				</div>
+			</div>
+		</div>
+	    </div>
+	    <!-- End Slide 3 -->
+
+	    <!-- Start Slide 4 -->
+	    <div class="slide" id="slide4" data-anchor="slide4">
+
+
+		<div class="intro">
+			<h1>Wrist Ranger</h1>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 ">
+				<h3 class="text-left text-light">
+					Wrist Ranger: Haptic Feedback Device for the Visually Impaired.
+				</h3>
+				<h5 class="text-left text-light">
+					Research into finding an effective way to provide a spacial representation of the surrounding environment for the visually impaired.
+				</h5>
+				<h5 class="text-left text-light">
+					Won a <a href="http://www.cmu.edu/uro/MoM/competitions.html#yahoo">Yahoo! Undergraduate Research Award</a> at the 2014 Carnegie Mellon Meeting of the Minds Research Symposium. Funded by a Small Undergraduate Research Grant from Carnegie Mellon.
+				</h5>
+
+				<h5 class="text-left text-light">
+					This project looked to find an effective way to provide the visually impaired with spatial feedback of their surroundings by expanding upon past efforts of other researchers, as well as addressing issues that these other efforts faced, including problems with responsiveness, portability, and ease of use. 
+				</h5>
+				<h5 class="text-left text-light">
+					The product consists of multiple wrist-mounted ultrasonic range finders. The data collected about the surroundings is translated into different types of haptic or audible feedback, and each type of feedback will be tested for effectiveness.
+				</h5>
+				<h5 class="text-left text-light">
+					Project mentioned in The Tartan, Carnegie Mellon's student-run newspaper: <a href="https://thetartan.org/2014/2/24/scitech/techbridge">https://thetartan.org/2014/2/24/scitech/techbridge</a>.
+				</h5>
+				<h5 class="text-left text-light">
+					Technologies: Arduino.
+				</h5>
+				</div>
+				<div class="col-md-6">
+					<a href="#"><img class="shrink-to-width" src="static/img/photo01.png" alt="description" /></a>
+				</div>
+			</div>
+		</div>
+	    </div>
+	    <!-- End Slide 4 -->
+
+	    <!-- Start Slide 5 -->
+	    <!--<div class="slide" id="slide5" data-anchor="slide5">
+	    	<h1>Totally customizable</h1>
+	    </div>-->
+	    <!-- End Slide 5 -->
+	</div>
+	<!-- End Projects -->
+	
+	<!-- Start Contact -->
+	<div class="section" id="contact">
+		<div class="intro">
+			<h1>Contact</h1>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 col-md-offset-3">
+				<h3 class="text-light">
+					mail: <a href="mailto:nshoemak@andrew.cmu.edu">
+					nshoemak@andrew.cmu.edu</a>
+				</h3>
+				<h3 class="text-light">
+			<ul id="horilist">
+	          	<li>
+	            	<a href="https://www.linkedin.com/in/norashoemaker" target="_blank"><img src="static/ico/flat/png/color-cirlce/linkedin.png" alt="LinkedIn"></a>
+	          	</li>
+	          	<li>
+	            	<a href="https://github.com/nshoemaker" target="_blank"><img src="static/ico/flat/png/color-cirlce/github.png" alt="GitHub"></a>
+	          	</li>
+	          	<li>
+	            	<a href="https://www.facebook.com/nora.shoemaker" target="_blank"><img src="static/ico/flat/png/color-cirlce/facebook.png" alt="Facebook"></a>
+	          	</li>
+	          	<li>
+	            	<a href="http://instagram.com/nshoemaker" target="_blank"><img src="static/ico/flat/png/color-cirlce/instagram.png" alt="Instagram"></a>
+	          	</li>
+	         	 <li>
+	            	<a href="http://www.pinterest.com/makesshoes" target="_blank"><img src="	static/ico/flat/png/color-cirlce/pinterest.png" alt="Pinterest"></a>
+	          	</li>
+        	</ul>
+				</h3>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End Contact -->
+</div>
+
+
+
 </body>
 </html>
