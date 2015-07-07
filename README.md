@@ -16,7 +16,7 @@ Version 1.1
 -------
 My second try used [fullpage.js](https://github.com/alvarotrigo/fullPage.js/) and this repo remains in this format.
 
-Unfortunately, this version of my website was not mobile friendly because fullpage.js does not support pinch to zoom on mobile. This is a known [issue] (https://github.com/alvarotrigo/fullPage.js/issues/125), and it does not look like it will be fixed soon. My design was responsive, but I would rather give users the option of zooming in, if they desire, rather than dictating a fixed size.
+Unfortunately, this version of my website was not mobile friendly because fullpage.js does not support pinch to zoom on mobile. This is a known [issue] (https://github.com/alvarotrigo/fullPage.js/issues/125), and it does not look like it will be fixed soon. My design was responsive, but I would rather give users the option of zooming in, rather than dictating a fixed size.
 
 Version 2.0
 -------
